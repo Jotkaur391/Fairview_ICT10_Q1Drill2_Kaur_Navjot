@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Student Profile</title>
+
+  <!-- PyScript 2024.1.1 -->
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+  <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body style="font-family: Arial, sans-serif; padding:20px;
+             background-image: url('https://img.freepik.com/free-vector/lilac-border-dramatic-flower-background_53876-119345.jpg?semt=ais_incoming&w=740&q=80');
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-position: center;
+             color: white;">
+
+<center>
+  <h2>Student Profile</h2>
+
+  <label>Name:</label>
+  <input id="name" type="text" /><br><br>
+
+  <label>Age:</label>
+  <input id="age" type="number" /><br><br>
+
+  <label>School:</label>
+  <input id="school" type="text" /><br><br>
+
+  <label>Birthday Date:</label>
+  <input id="birthdate" type="date" /><br><br>
+
+  <button id="generate-btn">Generate Message</button>
+
+<br>
+
+  <h3>Output:</h3>
+</center>
+  <div id="output" style="white-space: pre-wrap; border:1px solid #ccc; padding:10px; min-height:60px;"></div>
+
+
+  <!-- Tell PyScript to fetch the Python file -->
+  <py-config>
+    [[fetch]]
+    files = ["main.py"]
+  </py-config>
+
+  <!-- Load external Python -->
+  <script type="py" src="main.py"></script>
+
+</body>
+</html>
